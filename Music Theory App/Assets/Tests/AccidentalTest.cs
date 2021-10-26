@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using UnityEngine;
 
 namespace Tests
 {
@@ -78,11 +79,21 @@ namespace Tests
 
         [Test]
 
-        [TestCase (0, 0, 0)]
-
-        public void CoordinatesWork (int valueIn, int fifths, int octaves)
+        [TestCase (-2)]
+        [TestCase (-1)]
+        [TestCase (1)]
+        [TestCase (2)]
+        
+        public void CoordinatesWork (int valueIn)
         {
-            Assert.AreEqual (new Accidental(valueIn).Cooridnate, new Coordinate (fifths, octaves));
+            var input = new Vector2Int (7, -4);
+            var coord = Coordinate.Sharp;
+
+            input *= valueIn;
+            coord *= valueIn;
+            
+            Assert.AreEqual (input.x, coord.Fifths);
+            Assert.AreEqual (input.y, coord.Octaves);
         }
     }
 }
