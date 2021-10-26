@@ -55,5 +55,34 @@ namespace Tests
             Assert.AreEqual (expected, Accidental.StringToInt (str));
         }
 
+        
+        
+        /////////////////////////////////////////////////////////////
+        /// Constructor
+
+        [Test]
+        
+        [TestCase (0,   0)]
+        [TestCase (2,   2)]
+        [TestCase (-2, -2)]
+        
+        public void ConstructorsWorks (int valueIn, int valueExpected)
+        {
+            Assert.AreEqual (valueExpected, new Accidental(valueIn).IntValue);
+        }
+        
+        
+        
+        /////////////////////////////////////////////////////////////
+        /// Coordinates work
+
+        [Test]
+
+        [TestCase (0, 0, 0)]
+
+        public void CoordinatesWork (int valueIn, int fifths, int octaves)
+        {
+            Assert.AreEqual (new Accidental(valueIn).Cooridnate, new Coordinate (fifths, octaves));
+        }
     }
 }

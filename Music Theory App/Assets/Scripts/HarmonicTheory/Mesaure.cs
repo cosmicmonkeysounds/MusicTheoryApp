@@ -5,13 +5,13 @@ using System.Collections.Generic;
 public class Measure
 {
     public TimeSignature timeSignature;
-    public List<Note> notes;
+    public List<ChromaticNote> notes;
 
     public Measure (TimeSignature timeSig)
     {
         timeSignature = timeSig;
 
-        notes = new List<Note>();
+        notes = new List<ChromaticNote>();
 
         /*for (int i = 0; i < timeSignature.Numerator; ++i)
         {

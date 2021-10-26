@@ -38,6 +38,7 @@ public class Accidental
     
     
     
+    
     ////////////////////////////////////////////////////////////////
     // String to Integer Conversion
 
@@ -60,18 +61,23 @@ public class Accidental
     
     
     
+    
     ////////////////////////////////////////////////////////////////
     // Sharp and Flat coordinates
     
-    public static Cooridnate SharpCoordinate { get => new Cooridnate (7,  -4); }
-    public static Cooridnate FlatCoordinate  { get => new Cooridnate (-7,  4); }
+    public static Coordinate SharpCoordinate    { get => Coordinate.Sharp; }
+    public static Coordinate FlatCoordinate     { get => Coordinate.Flat; }
+    public static Coordinate NaturalCoordinate  { get => Coordinate.Natural; }
+    
     
     
     
     ////////////////////////////////////////////////////////////////
     // Non-static stuff
     
+    
     [SerializeField] private int value = 0;
+    
     
     public int IntValue
     {
@@ -85,8 +91,10 @@ public class Accidental
         set => this.value = StringToInt (value);
     }
     
-    public Cooridnate Cooridnate { get => SharpCoordinate * this.value; }
+    
+    public Coordinate Cooridnate { get => SharpCoordinate * this.value; }
 
+    
     public Accidental ()           { this.value = 0; }
     public Accidental (int _value) { this.value = _value; }
     public Accidental (string str) { this.value = StringToInt (str); }
