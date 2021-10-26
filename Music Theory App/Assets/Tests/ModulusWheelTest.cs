@@ -21,7 +21,7 @@ namespace Tests
             
             for (int i = 0; i < values.Length; ++i)
             {
-                Assert.AreEqual (values[i], wheel.AtPosition(i));
+                Assert.AreEqual (values[i], wheel.PeakAtPosition(i));
             }
         }
         
@@ -76,9 +76,9 @@ namespace Tests
         {
             var wheel = new ModulusWheel<NoteName> (values);
 
-            Assert.AreEqual (values[0], wheel.AtPosition(0));
-            Assert.AreEqual (values[0], wheel.AtPosition (values.Length * 2));
-            Assert.AreEqual (values[0], wheel.AtPosition (values.Length * -2));
+            Assert.AreEqual (values[0], wheel.PeakAtPosition(0));
+            Assert.AreEqual (values[0], wheel.PeakAtPosition (values.Length * 2));
+            Assert.AreEqual (values[0], wheel.PeakAtPosition (values.Length * -2));
         }
     }
 }
