@@ -4,7 +4,7 @@ C# library and Unity app exploring the work of [Dr. Elaine Chew](https://en.wiki
 
 ## Getting Started
 
-Only dependancy is Unity 2020.3.x!
+Only dependency is Unity 2020.3.x!
 
 ## Coding style
 
@@ -13,10 +13,6 @@ This repo uses the [JUCE coding style](https://juce.com/discover/stories/coding-
 ## Contributing
 
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
