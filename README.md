@@ -14,15 +14,15 @@ This repo uses the [JUCE coding style](https://juce.com/discover/stories/coding-
 
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Authors
-
-* **John Janigan-Mills** - *Project lead* - [PurpleBooth](https://github.com/cosmicmonkeysounds)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Authors
+
+* **Liam Britten** - *Lead designer*
+* **John Janigan-Mills** - *Lead programmer, senior designer* - [Cosmic Monkey Sounds](https://github.com/cosmicmonkeysounds)
+
 
 ## Acknowledgments
 
