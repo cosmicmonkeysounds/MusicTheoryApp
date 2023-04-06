@@ -31,7 +31,7 @@ public class DiatonicNote
     }
 
 
-    
+
     ////////////////////////////////////////////////////////////////
     // Shortcuts 
 
@@ -42,13 +42,14 @@ public class DiatonicNote
     public static DiatonicNote E { get => new DiatonicNote (NoteName.E); }
     public static DiatonicNote F { get => new DiatonicNote (NoteName.F); }
     public static DiatonicNote G { get => new DiatonicNote (NoteName.G); }
-
+    
+    
     
     
     ////////////////////////////////////////////////////////////////
     // Non-static stuff
     
-    public NoteName   Name       { get; private set; }
+    public NoteName   Name       { get; protected set; }
     public Coordinate Coordinate { get => DiatonicCoordinates[Name]; }
     
     public DiatonicNote (NoteName name)
@@ -57,4 +58,10 @@ public class DiatonicNote
     }
 
     public DiatonicNote () : this (NoteName.C) { }
+    
+    
+    public static implicit operator NoteName (DiatonicNote note) => note.Name;
+    
+    public static implicit operator Coordinate (DiatonicNote note) => DiatonicCoordinates[note];
+    
 }

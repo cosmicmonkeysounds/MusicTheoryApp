@@ -3,15 +3,15 @@ using System;
 [Serializable]
 public class TimeSignature
 {
-    public int numerator, denominator;
+    
+    public float Numerator   { get; protected set; }
+    public float Denominator { get; protected set; }
 
-    public int Numerator   { get => numerator; }
-    public int Denominator { get => denominator; }
 
-
-    public TimeSignature (int topNumber, int bottomNumber)
+    public TimeSignature (float numerator = 4.0f, float denominator = 4.0f)
     {
-        numerator   = topNumber;
-        denominator = bottomNumber;
+        Numerator   = numerator;
+        Denominator = denominator;
     }
+    
 }

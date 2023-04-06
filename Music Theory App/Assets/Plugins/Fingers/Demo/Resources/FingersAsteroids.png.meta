@@ -192,7 +192,7 @@ TextureImporter:
       213: 21300124
     second: Asteroids_62
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -212,6 +212,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -243,13 +245,41 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1575,6 +1605,69 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Asteroids_21: 21300042
+      Asteroids_5: 21300010
+      Asteroids_9: 21300018
+      Asteroids_41: 21300082
+      Asteroids_45: 21300090
+      Asteroids_57: 21300114
+      Asteroids_47: 21300094
+      Asteroids_59: 21300118
+      Asteroids_22: 21300044
+      Asteroids_39: 21300078
+      Asteroids_26: 21300052
+      Asteroids_30: 21300060
+      Asteroids_31: 21300062
+      Asteroids_17: 21300034
+      Asteroids_18: 21300036
+      Asteroids_53: 21300106
+      Asteroids_6: 21300012
+      Asteroids_46: 21300092
+      Asteroids_51: 21300102
+      Asteroids_54: 21300108
+      Asteroids_27: 21300054
+      Asteroids_36: 21300072
+      Asteroids_12: 21300024
+      Asteroids_14: 21300028
+      Asteroids_42: 21300084
+      Asteroids_2: 21300004
+      Asteroids_34: 21300068
+      Asteroids_60: 21300120
+      Asteroids_20: 21300040
+      Asteroids_29: 21300058
+      Asteroids_19: 21300038
+      Asteroids_55: 21300110
+      Asteroids_7: 21300014
+      Asteroids_10: 21300020
+      Asteroids_8: 21300016
+      Asteroids_25: 21300050
+      Asteroids_52: 21300104
+      Asteroids_43: 21300086
+      Asteroids_58: 21300116
+      Asteroids_0: 21300000
+      Asteroids_24: 21300048
+      Asteroids_50: 21300100
+      Asteroids_16: 21300032
+      Asteroids_3: 21300006
+      Asteroids_37: 21300074
+      Asteroids_38: 21300076
+      Asteroids_44: 21300088
+      Asteroids_61: 21300122
+      Asteroids_32: 21300064
+      Asteroids_40: 21300080
+      Asteroids_13: 21300026
+      Asteroids_35: 21300070
+      Asteroids_23: 21300046
+      Asteroids_49: 21300098
+      Asteroids_48: 21300096
+      Asteroids_33: 21300066
+      Asteroids_4: 21300008
+      Asteroids_15: 21300030
+      Asteroids_56: 21300112
+      Asteroids_1: 21300002
+      Asteroids_28: 21300056
+      Asteroids_11: 21300022
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

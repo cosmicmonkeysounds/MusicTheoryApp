@@ -65,9 +65,11 @@ public class Accidental
     ////////////////////////////////////////////////////////////////
     // Sharp and Flat coordinates
     
-    public static Coordinate SharpCoordinate    { get => Coordinate.Sharp; }
-    public static Coordinate FlatCoordinate     { get => Coordinate.Flat; }
-    public static Coordinate NaturalCoordinate  { get => Coordinate.Natural; }
+    public static Accidental Sharp    { get => new Accidental (1); }
+    public static Accidental Flat     { get => new Accidental (-1); }
+    public static Accidental Natural  { get => new Accidental (0); }
+    
+    
     
     
     
@@ -92,7 +94,7 @@ public class Accidental
     }
     
     
-    public Coordinate Cooridnate { get => SharpCoordinate * this.value; }
+    public Coordinate Cooridnate { get => Coordinate.Sharp * this.value; }
 
     
     public Accidental ()           { this.value = 0; }
