@@ -8,14 +8,12 @@ public class ChromaticNote
     [field: SerializeField] public DiatonicNote DiatonicNote { get; protected set; }
     [field: SerializeField] public Accidental   Accidental   { get; protected set; }
 
-    public ChromaticNote (DiatonicNote note = DiatonicNote.C, Accidental acci = )
+    public ChromaticNote (DiatonicNote note, Accidental acci)
     {
-        diatonicNote = note;
-        accidental   = acci;
+        DiatonicNote = note;
+        Accidental   = acci;
     }
+    
+    public int MidiNote => DiatonicNote.Coordinate.Semitone + Accidental.IntValue;
 
-    public ChromaticNote()
-    {
-        diatonicNote = new DiatonicNote ();
-    }
 }

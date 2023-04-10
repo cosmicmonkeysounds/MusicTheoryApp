@@ -35,22 +35,23 @@ public class DiatonicNote
     ////////////////////////////////////////////////////////////////
     // Shortcuts 
 
-    public static DiatonicNote A { get => new DiatonicNote (NoteName.A); }
-    public static DiatonicNote B { get => new DiatonicNote (NoteName.B); }
-    public static DiatonicNote C { get => new DiatonicNote (NoteName.C); }
-    public static DiatonicNote D { get => new DiatonicNote (NoteName.D); }
-    public static DiatonicNote E { get => new DiatonicNote (NoteName.E); }
-    public static DiatonicNote F { get => new DiatonicNote (NoteName.F); }
-    public static DiatonicNote G { get => new DiatonicNote (NoteName.G); }
-    
-    
+    public static DiatonicNote A => new (NoteName.A); 
+    public static DiatonicNote B => new (NoteName.B); 
+    public static DiatonicNote C => new (NoteName.C); 
+    public static DiatonicNote D => new (NoteName.D); 
+    public static DiatonicNote E => new (NoteName.E);
+    public static DiatonicNote F => new (NoteName.F); 
+    public static DiatonicNote G => new (NoteName.G);
     
     
     ////////////////////////////////////////////////////////////////
     // Non-static stuff
     
-    public NoteName   Name       { get; protected set; }
-    public Coordinate Coordinate { get => DiatonicCoordinates[Name]; }
+    
+    public NoteName Name { get; protected set; }
+    
+    public Coordinate Coordinate => DiatonicCoordinates[Name]; 
+    
     
     public DiatonicNote (NoteName name)
     {

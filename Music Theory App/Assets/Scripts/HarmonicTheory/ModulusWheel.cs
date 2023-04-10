@@ -3,14 +3,14 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public class ModulusWheel<Type>
+public class ModulusWheel<T>
 {
     [SerializeField] private int numberOfSpokes, currentPosition;
     [SerializeField] private bool canBeRotated = true;
 
-    private Type[] wheel;
+    private T[] wheel;
 
-    public ModulusWheel (Type[] values, bool _canBeRotated = true)
+    public ModulusWheel (T[] values, bool _canBeRotated = true)
     {
         wheel           = values;
         numberOfSpokes  = wheel.Length;
@@ -43,12 +43,12 @@ public class ModulusWheel<Type>
     ////////////////////////////////////////////////////////////////
     // Fetch from positions
 
-    public Type PeakTop()
+    public T PeakTop()
     {
         return AtWheelPosition (currentPosition);
     }
 
-    public Type PeakAtPosition (int position)
+    public T PeakAtPosition (int position)
     {
         return AtWheelPosition (position + currentPosition);
     }
@@ -56,7 +56,7 @@ public class ModulusWheel<Type>
     ////////////////////////////////////////////////////////////////
     // The heart of it
 
-    private Type AtWheelPosition (int position)
+    private T AtWheelPosition (int position)
     {
         do { position = (position + numberOfSpokes) % numberOfSpokes; } 
         while (position.IsNegative());
