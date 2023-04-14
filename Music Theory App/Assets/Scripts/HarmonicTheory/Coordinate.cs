@@ -17,12 +17,14 @@ public class Coordinate
     
     public static Coordinate operator * (Coordinate coord, int scaler)
     {
-        if (scaler != 0)
-        {
-            coord.rawCoordinate *= scaler;
-        }
-        
+        coord.rawCoordinate *= scaler;
         return coord;
+    }
+
+
+    public static Coordinate operator + (Coordinate coord1, Coordinate coord2)
+    {
+        return new Coordinate (coord1.rawCoordinate + coord2.rawCoordinate);
     }
     
     

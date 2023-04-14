@@ -48,6 +48,7 @@ public class DiatonicNote
     // Non-static stuff
     
     
+    [field: SerializeField]
     public NoteName Name { get; protected set; }
     
     public Coordinate Coordinate => DiatonicCoordinates[Name]; 
